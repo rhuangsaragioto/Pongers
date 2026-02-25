@@ -1,12 +1,12 @@
 CC = g++
-CFLAGS = --std=c++20 -Wall -pedantic -g
+CFLAGS = --std=c++20 -pedantic -g
 LIB = -lsfml-graphics -lsfml-audio -lsfml-window -lsfml-system -lboost_unit_test_framework
 
-DEPS = Pong.hpp
+DEPS = Pong.hpp Powerup.hpp
 
-OBJECTS = Pong.o
+OBJECTS = Pong.o Powerup.o
 
-.PHONY: all clean Pongers
+.PHONY: all clean
 
 all: Pongers
 
